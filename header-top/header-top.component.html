@@ -1,0 +1,35 @@
+
+
+<header class="dark">
+
+  <div id="top">
+    <div class="wrap main_flex__nowrap flex__align-items_center flex__jcontent_between">
+      <div class="main_flex__nowrap flex__align-items_center">
+        <div id="sign" class="btn main_flex__nowrap flex__align-items_center flex__jcontent_between" *ngIf="!loginservice.isUserLoggedIn()" [routerLink]="['/adduser']" > SIGN UP</div>
+        <div id="sign" class="btn main_flex__nowrap flex__align-items_center flex__jcontent_between" *ngIf="loginservice.isUserLoggedIn()" [routerLink]="['/logout']" > LOG OUT</div>
+        <div id="user_name" class="btn main_flex__nowrap flex__align-items_center flex__jcontent_between" > {{firstName}} {{lastName}}</div>
+      </div>
+      <div id="logo"><a class="midasVlas anime" href="#">MidasVlad</a></div>
+      <div class="main_flex__nowrap flex__align-items_center">
+        <div id="currency">Currency: <span>US DOLLAR</span></div>
+        <div id="cart" class="btn main_flex__nowrap flex__align-items_center flex__jcontent_between"   [routerLink]="['/user-cab']" *ngIf="loginservice.isUserLoggedIn()"><mat-icon class="material-icons">
+          local_mall
+          </mat-icon>   CART</div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="menu">
+    <div class="wrap main_flex__nowrap flex__align-items_center flex__jcontent_center">
+      <nav id="main_nav">
+        <li [routerLink]="['/mens']"><a>MENS</a></li>
+        <li [routerLink]="['/womens']"><a>WOMENS</a></li>
+        <li [routerLink]="['/']"><a>GOODS</a></li>
+        <li [routerLink]="['/accessories']"><a>ACCESSORIES</a></li>
+        <li><a href="#">BLOG</a></li>
+      </nav>
+
+    </div>
+  </div>
+</header>

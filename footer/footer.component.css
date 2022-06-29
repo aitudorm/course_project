@@ -1,0 +1,328 @@
+header {
+  margin-top: 10px;
+  /* padding-bottom: 10px; */
+}
+
+a.navbar-brand {
+  font-size: 30px;
+}
+
+.nav-link a {
+  color: black;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+  color: black;
+}
+
+.booking {
+  margin: 0;
+  /* Убираем отступы */
+  height: 75%;
+  /* Высота страницы */
+  /* Параметры фона */
+  background-size: cover;
+  /* Фон занимает всю доступную площадь */
+}
+
+
+.title {
+  padding: 210px 0;
+}
+
+.title__heading {
+  padding-left: 30px;
+  font-size: 56px;
+  color: #fff;
+
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.title__heading._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.title__word .title_with {
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+  margin-top: -10px;
+  padding-left: 36.5px;
+
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.title__word .title_with._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0.4s;
+}
+
+.title__word .aitu1 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #2E7AB2;
+  margin-top: -10px;
+
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.title__word .aitu1._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0.4s;
+}
+
+.title__word .aitu2 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #2B6590;
+  margin-top: -10px;
+
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.title__word .aitu2._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0.6s;
+}
+
+.title__word .aitu3 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #1D5884;
+  margin-top: -10px;
+
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.title__word .aitu3._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0.8s;
+}
+
+.title__word .aitu4 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #0C4A78;
+  margin-top: -10px;
+
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.title__word .aitu4._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 1s;
+}
+
+.call {
+  background: #CFD8DF;
+  border-bottom: 1px solid #dde3e7;
+  padding: 20px 0;
+}
+
+.phone {
+  width: 455px;
+}
+
+.phone__text {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 56px;
+
+  transform: translate(-120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.phone__text._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 1s;
+}
+
+.nowword {
+  font-weight: bolder;
+}
+
+.phone__digits {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 42px;
+
+  transform: translate(120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.phone__digits._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 1s;
+}
+
+.history {
+  margin-top: 60px;
+
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.history._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0.4s;
+}
+
+.history__title {
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+
+.history__text .h2 {
+  font-size: 35px;
+}
+
+.history__text p {
+  font-size: 15px;
+}
+
+.cta {
+  background: #CFD8DF;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  padding: 13px 0;
+  font-weight: 700;
+  display: block;
+  cursor: pointer;
+  width: 200px;
+  border: 0;
+  margin-top: -5px;
+  text-align: center;
+}
+
+.cab-images__item {
+  margin-bottom: 10px;
+}
+
+.cab-images-down {
+  margin-top: 75px;
+
+  transform: translate(0px, 80%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.cab-images-down._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0.4s;
+}
+
+.cab-images {
+  margin-top: 30px;
+
+  transform: translate(0px, 80%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.cab-images._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0.6s;
+}
+
+.about {
+  margin-top: 50px;
+}
+
+.faqh2 {
+  margin-top: 100px;
+  text-align: center;
+
+  transform: translate(-120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.faqh2._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0.4s;
+}
+
+.accordion {
+  transform: translate(120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+.accordion._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0.4s;
+}
+
+
+.footer {
+  margin-top: 200px;
+  background: #313E47;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 72px;
+}
+
+.socials {
+  text-align: center;
+}
+
+.fa-facebook-square {
+  font-size: 30px;
+  color: white;
+}
+
+.fa-twitter-square {
+  font-size: 30px;
+  color: white;
+}
+
+.fa-google-plus-square {
+  font-size: 30px;
+  color: white;
+}
+
+.line {
+  background: #52535e;
+  height: 1px;
+  margin-top: 7px;
+  margin-top: 50px;
+}
+
+.credits {
+  margin-top: 43px;
+  margin-left: 45px;
+  text-align: center;
+  color: white;
+}

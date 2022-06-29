@@ -1,0 +1,60 @@
+<div class="card my-5">
+  <div class="card-body">
+    <form #userForm="ngForm">
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" [(ngModel)]="user.email"
+          class="form-control"
+          id="email"
+          name="email"
+          placeholder="Enter your email address"
+          required #email="ngModel">
+        <div [hidden]="!email.pristine" class="alert alert-danger">Email is required</div>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" [(ngModel)]="user.password"
+          class="form-control"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+          required #password="ngModel">
+        <div [hidden]="!email.pristine" class="alert alert-danger">Password is required</div>
+      </div>
+      <button type="submit" [disabled]="!userForm.form.valid" (click) = defaultLogin()
+        class="btn btn-info" >Submit</button>
+        <!-- <button (click) = loginWithGoogle()>
+          ауе татары
+        </button> -->
+        <button class="btn btn-dark" #loginRef>
+          Login with Google  <img class="social-btn-icon" alt="Login with Google" src="https://hrcdn.net/fcore/assets/google-colored-20b8216731.svg" width="20px" height="15px">
+        </button>
+
+        <div class="card my-5">
+          <div class="card-body">
+            <!-- <table class="table table-bordered table-striped">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Surname</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Password</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>{{ user.id }}</td>
+                  <td>{{ user.firstName }}</td>
+                  <td>{{user.lastName}}</td>
+                  <td><a href="mailto:{{ user.email }}">{{ user.email }}</a></td>
+                  <td>{{user.password}}</td>
+                </tr>
+              </tbody>
+            </table> -->
+          </div>
+        </div>
+      </form>
+  </div>
+</div>

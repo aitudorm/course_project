@@ -1,0 +1,22 @@
+<!-- <div *ngIf="cartItems.length === 0" class="alert alert-info">Your Cart is Empty.</div> -->
+
+
+<ul  class="list-group" *ngIf="isUserLoggedIn()">
+  <li class="list-group-item" >
+    <span>Quantity</span> {{ cartTotal }}
+  </li>
+
+  <li class="list-group-item disabled text-danger" >
+
+    <strong>Total</strong> ${{ cartTotalStorage}}
+  </li>
+</ul>
+
+<ul class="list-group" *ngIf="isAdminLoggedIn()">
+  <li class="list-group-item">
+    <button class="btn btn-link" style="text-align: left;font-size: smaller;" [routerLink]="['/users']">Users List</button>
+  </li>
+  <li class="list-group-item">
+    <button class="btn btn-link" style="text-align: left; font-size: smaller;" [routerLink]="['/upload-page']">Upload Product</button>
+  </li>
+</ul>
